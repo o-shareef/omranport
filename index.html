@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+
     <title>Omran Shareef</title>
   </head>
   <body>
@@ -12,49 +13,45 @@
       <div id="menu">
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#ethics">Ethics</a></li>
+            <li><a href="#about" onclick="showSection('about'); return false;">About me</a></li>
+            <li><a href="#resume" onclick="showSection('resume'); return false;">Resume</a></li>
+            <li><a href="#projects" onclick="showSection('projects'); return false;">Projects</a></li>
+            <li><a href="#contact" onclick="showSection('contact'); return false;">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
 
-    <!-- Sections -->
-    <section id="about">
+
+    <section id="about" class="content-section">
       <h2>About Me</h2>
-      <p>Hello my Name is Omran Shareef I am a 2nd year Computer Engineering Student at Iowa State University,</p>
-      <p> I am currently also an Intern at Electrical Power Products for their IT department. In my frees time I really Enjoy 
+      <p>Hello, my name is Omran Shareef. I am a 2nd year Computer Engineering Student at Iowa State University.</p>
+      <p>I am currently also an Intern at Electrical Power Products for their IT department. In my free time, I really enjoy 
       hanging out with friends and family.</p>
     </section>
 
-    <section id="resume">
+    <section id="resume" class="content-section">
       <h2>Resume</h2>
-      <iframe src= "Omran_Resume.pdf" width="800" height="800"> </iframe> 
+      <iframe src="Omran_Resume.pdf" width="800" height="800"></iframe>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="content-section">
       <h2>Projects</h2>
       <h4>My Portfolio Website (Yes, the one you are on right now!)</h4>
-      <h5>Skills: <p1>Git, Git hub, HTML, CSS</p1></h5>
-      <p>I have not done any web development before this, I decided to build this really simple website from scratch,</p>
-      <p>I am using github to host it for free, so far I have only utilized basic raw HTML and CSS, I definetly plan on </p>
-      <p>learning about a frame work such as react soon to make it look a lot better!</p>
+      <h5>Skills: <span>Git, GitHub, HTML, CSS</span></h5>
+      <p>I have not done any web development before this. I decided to build this really simple website from scratch.</p>
+      <p>I am using GitHub to host it for free. So far, I have only utilized basic raw HTML and CSS. I definitely plan on 
+      learning about a framework such as React soon to make it look a lot better!</p>
     </section>
 
-    <section id="ethics">
-      <h2>Ethics</h2>
-      <iframe src= "CPRE 394 ethics.pdf" width="800" height="800"> </iframe> 
-    </section>
 
-    <section id="contact">
+    <section id="contact" class="content-section">
       <h2>Contact</h2>
       <p>Email: omranshareef101@gmail.com</p>
       <p>Phone Number: 515-669-3664</p>
       <p>Location: Urbandale, Iowa</p>
     </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
